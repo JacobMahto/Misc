@@ -1,10 +1,8 @@
 #include<stdio.h>
 
 int main(){
-  void simpleDemo();//Simple pointer demo
-  simpleDemo();
-  getchar();
-  return 0;
+  void arrayNameAsPointers();
+  arrayNameAsPointers();
 }
 
 void simpleDemo(){
