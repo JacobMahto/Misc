@@ -11,17 +11,22 @@ void lcd_init(){
   lcd_cmd(0x02);
 }
 
-//sends data to lcd using port B
-void lcd_cmd(int cmd){
-  PORTB=cmd & 0xf0;//masking the lower 4 bits
-  PORTB=PORTB+0x04;//Adding lower 4 bits 0100 for PB3-PB2-PB1-PB0 -->X-EN-RW-RS
-  _delay_ms(2);
-  PORTB=PORTB-0X04;
-  PORTB=(cmd<<4)&0xf0;
-  PORTB=PORTB+0x04;
-  _delay_ms(2);
-  PORTB=PORTB-0x04;
-}
+
+  //command mode transmission
+  void lcd_cmd(char cmd){
+    char upperNibble=cmd & 0xf0;
+    char lowerNibble=cmd & 0x0f;
+    lowerNibble=lowerNibble<<4;
+    char controlPins=0X04;//RS=0,RW=0 and E=1
+
+    //4 bit transmission
+    PORTB=upperNibble+controlPins;
+    _delay_ms(2);
+    PORTB=upperNibble;
+    PORTB=lowerNibble+controlPins;
+    _delay_ms(2);
+    PORTB=lowerNibble;
+  }
 
 //sends data to lcd in 4 bit entry mode
 void lcd_data(int data){

@@ -135,12 +135,15 @@ int main(){
     if(k==p){
       lcd_cmd(0x01);
       lcd_string("CORRECT");
-      while(1){}
+  //    while(1){}
+
     }
     else{
       lcd_cmd(0x01);
       lcd_string("INCORRECT");
-      a=0;
+
     }
+    _delay_ms(2000);
+    a=0;k=0;
   }
 }
