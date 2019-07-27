@@ -1,0 +1,1126 @@
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="IX RBSE">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9694908928"/>&nbsp;1</td>
+  <td><b>31</b></td>
+  <td>tanishka rawat S/O </td>
+  <td>16:36:47 </td>
+  <td>18:14:34 <span style='color:red;'>(Early-1h 16m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9610418948"/>&nbsp;2</td>
+  <td><b>32</b></td>
+  <td>tanishq soni S/O santosh soni</td>
+  <td>16:41:47 </td>
+  <td>18:37:34 <span style='color:red;'>(Early-0h 53m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8005757075"/>&nbsp;3</td>
+  <td><b>33</b></td>
+  <td>yuvraj S/O yogendra singh</td>
+  <td>16:35:19 </td>
+  <td>18:35:43 <span style='color:red;'>(Early-0h 55m)<span></td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="IX CBSE">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9772833157"/>&nbsp;1</td>
+  <td><b>28</b></td>
+  <td>diya sharma S/O manoj sharma </td>
+  <td>16:28:36 </td>
+  <td>18:53:03 <span style='color:red;'>(Early-0h 37m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9829806666"/>&nbsp;2</td>
+  <td><b>29</b></td>
+  <td>KANAK  S/O UMA SHANKAR AGARWAL</td>
+  <td>16:31:16 </td>
+  <td>18:38:34 <span style='color:red;'>(Early-0h 52m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9314938493"/>&nbsp;3</td>
+  <td><b>30</b></td>
+  <td>SATYAWRTH S/O SURENDRA SINGH</td>
+  <td>16:10:55 </td>
+  <td>18:35:47 <span style='color:red;'>(Early-0h 55m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="7742759422"/>&nbsp;4</td>
+  <td><b>34</b></td>
+  <td>vratika S/O mukesh puri</td>
+  <td>16:36:26 </td>
+  <td>18:53:10 <span style='color:red;'>(Early-0h 37m)<span></td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="X RBSE">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9352392195"/>&nbsp;1</td>
+  <td><b>17</b></td>
+  <td>priya agarwal S/O gajanand</td>
+  <td>16:27:21 </td>
+  <td>19:18:45 <span style='color:red;'>(Early-0h 12m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9982918942"/>&nbsp;2</td>
+  <td><b>18</b></td>
+  <td>bhawani singh S/O sunilsingh</td>
+  <td>15:58:10 </td>
+  <td>19:15:42 <span style='color:red;'>(Early-0h 15m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9929869594"/>&nbsp;3</td>
+  <td><b>20</b></td>
+  <td>piyush sharma S/O rajesh sharma</td>
+  <td>15:50:55 </td>
+  <td>19:16:04 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="7023649756"/>&nbsp;4</td>
+  <td><b>21</b></td>
+  <td>arman khan S/O arif khan</td>
+  <td>16:34:06 </td>
+  <td>19:16:35 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9314620840"/>&nbsp;5</td>
+  <td><b>22</b></td>
+  <td>khushi sharma S/O mithlesh</td>
+  <td>16:27:15 </td>
+  <td>19:16:01 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8209743462"/>&nbsp;6</td>
+  <td><b>23</b></td>
+  <td>tamanna tanwar S/O yogendra singh</td>
+  <td>16:26:27 </td>
+  <td>19:16:10 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9829058562"/>&nbsp;7</td>
+  <td><b>25</b></td>
+  <td>bhavesh saini S/O suresh saini</td>
+  <td>16:10:52 </td>
+  <td>19:16:30 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+  <tr>
+  <td><input type="checkbox" name="mob[]" value="9828183131"/>&nbsp;1</td>
+  <td><b>19</b></td>
+  <td>gourav soni S/O mahendra soni</td>
+  </tr>
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="X CBSE">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="7976582368"/>&nbsp;1</td>
+  <td><b>5</b></td>
+  <td>chetan sharma S/O babulal sharma</td>
+  <td>17:17:07 <span style='color:red;'>(Late-0h 17m)<span></td>
+  <td>19:17:06 <span style='color:red;'>(Early-0h 13m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9828395108"/>&nbsp;2</td>
+  <td><b>7</b></td>
+  <td>vishal S/O ram singh</td>
+  <td>17:17:11 <span style='color:red;'>(Late-0h 17m)<span></td>
+  <td>19:16:38 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8696123425"/>&nbsp;3</td>
+  <td><b>11</b></td>
+  <td>navya joshi S/O shatish joshi</td>
+  <td>17:21:49 <span style='color:red;'>(Late-0h 21m)<span></td>
+  <td>19:18:47 <span style='color:red;'>(Early-0h 12m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9851719948"/>&nbsp;4</td>
+  <td><b>12</b></td>
+  <td>prem rawat S/O jay prakash </td>
+  <td>16:02:17 </td>
+  <td>19:16:51 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="7976795529"/>&nbsp;5</td>
+  <td><b>13</b></td>
+  <td>priyawrth S/O mahendra singh</td>
+  <td>17:05:06 <span style='color:red;'>(Late-0h 5m)<span></td>
+  <td>19:16:25 <span style='color:red;'>(Early-0h 14m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8696903798"/>&nbsp;6</td>
+  <td><b>14</b></td>
+  <td>uday S/O samundra</td>
+  <td>17:22:57 <span style='color:red;'>(Late-0h 22m)<span></td>
+  <td>19:17:25 <span style='color:red;'>(Early-0h 13m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8107060892"/>&nbsp;7</td>
+  <td><b>16</b></td>
+  <td>rohit singh S/O dhanmaya devi</td>
+  <td>17:35:11 <span style='color:red;'>(Late-0h 35m)<span></td>
+  <td>19:19:54 <span style='color:red;'>(Early-0h 11m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9828318054"/>&nbsp;8</td>
+  <td><b>27</b></td>
+  <td>utkarsha verma S/O babulal verma</td>
+  <td>16:20:04 </td>
+  <td>19:15:53 <span style='color:red;'>(Early-0h 15m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="7014553577"/>&nbsp;9</td>
+  <td><b>67</b></td>
+  <td>anjali S/O mahesh kumar</td>
+  <td>16:26:31 <span style='color:red;'>(Late-0h 26m)<span></td>
+  <td>19:15:49 <span style='color:red;'>(Early-0h 15m)<span></td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+  <tr>
+  <td><input type="checkbox" name="mob[]" value="9785237719"/>&nbsp;1</td>
+  <td><b>6</b></td>
+  <td>aditya  S/O anil sharma</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9783693984"/>&nbsp;2</td>
+  <td><b>8</b></td>
+  <td>khushi sahu S/O lokesh sahu</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9785723972"/>&nbsp;3</td>
+  <td><b>9</b></td>
+  <td>priya sharma S/O anil sharma</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9829211722"/>&nbsp;4</td>
+  <td><b>10</b></td>
+  <td>himanshi S/O mahendra singh</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9929030964"/>&nbsp;5</td>
+  <td><b>15</b></td>
+  <td>ravi S/O raju rahi</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9829095797"/>&nbsp;6</td>
+  <td><b>24</b></td>
+  <td>megha S/O babulal sharma</td>
+  </tr>
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="XI PCM">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9929372153"/>&nbsp;1</td>
+  <td><b>36</b></td>
+  <td>arwa S/O hansraj sharma</td>
+  <td>16:11:09 </td>
+  <td>19:20:10 <span style='color:red;'>(Early-0h 10m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9351719948"/>&nbsp;2</td>
+  <td><b>37</b></td>
+  <td>dev rawat S/O jai prakash</td>
+  <td>16:06:29 </td>
+  <td>19:13:22 <span style='color:red;'>(Early-0h 17m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9460137355"/>&nbsp;3</td>
+  <td><b>39</b></td>
+  <td>divyanshu S/O jivan singh</td>
+  <td>16:10:45 </td>
+  <td>19:12:41 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9413095908"/>&nbsp;4</td>
+  <td><b>42</b></td>
+  <td>ravindra S/O shyam </td>
+  <td>16:14:28 </td>
+  <td>19:11:54 <span style='color:red;'>(Early-0h 19m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9414072621"/>&nbsp;5</td>
+  <td><b>45</b></td>
+  <td>ronak S/O prithvi raj</td>
+  <td>15:59:19 </td>
+  <td>19:12:14 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9783764816"/>&nbsp;6</td>
+  <td><b>46</b></td>
+  <td>pushpendra  S/O ram singh</td>
+  <td>16:14:15 </td>
+  <td>19:12:39 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9887672464"/>&nbsp;7</td>
+  <td><b>49</b></td>
+  <td>tanishka  S/O jai singh rathore </td>
+  <td>15:59:58 </td>
+  <td>19:12:58 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9785362586"/>&nbsp;8</td>
+  <td><b>50</b></td>
+  <td>mayank S/O jai kumar</td>
+  <td>16:12:41 </td>
+  <td>19:12:37 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9782188803"/>&nbsp;9</td>
+  <td><b>66</b></td>
+  <td>tushar saini S/O arjun saini</td>
+  <td>16:17:57 </td>
+  <td>19:13:26 <span style='color:red;'>(Early-0h 17m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8209651590"/>&nbsp;10</td>
+  <td><b>69</b></td>
+  <td>satyveer singh  S/O jai singh </td>
+  <td>16:14:18 </td>
+  <td>19:13:40 <span style='color:red;'>(Early-0h 17m)<span></td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+  <tr>
+  <td><input type="checkbox" name="mob[]" value="9462631505"/>&nbsp;1</td>
+  <td><b>40</b></td>
+  <td>sachin sharma S/O lokesh sharma</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="8890005426"/>&nbsp;2</td>
+  <td><b>43</b></td>
+  <td>kanishk S/O naveen sharma</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="7822927664"/>&nbsp;3</td>
+  <td><b>48</b></td>
+  <td>rajat yadav S/O sunil yadav</td>
+  </tr>
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="XI PCB">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9829401102"/>&nbsp;1</td>
+  <td><b>38</b></td>
+  <td>dipti bugalia S/O rajkumar bugalia</td>
+  <td>15:51:16 </td>
+  <td>19:12:09 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8078610912"/>&nbsp;2</td>
+  <td><b>44</b></td>
+  <td>mohit sharma S/O anil sharma</td>
+  <td>15:49:50 </td>
+  <td>19:12:53 <span style='color:red;'>(Early-0h 18m)<span></td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9829554183"/>&nbsp;3</td>
+  <td><b>47</b></td>
+  <td>vivek rao S/O hari prashad rao</td>
+  <td>16:29:50 </td>
+  <td>19:13:13 <span style='color:red;'>(Early-0h 17m)<span></td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+  <tr>
+  <td><input type="checkbox" name="mob[]" value="7976390026"/>&nbsp;1</td>
+  <td><b>35</b></td>
+  <td>anand singh S/O sajjan singh</td>
+  </tr>
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="XII PCM">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9783949994"/>&nbsp;1</td>
+  <td><b>54</b></td>
+  <td>ayush yadav  S/O ashok yadav</td>
+  <td>16:20:12 <span style='color:red;'>(Late-0h 20m)<span></td>
+  <td>19:31:45 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9587535804"/>&nbsp;2</td>
+  <td><b>56</b></td>
+  <td>gourav sharma  S/O narendra</td>
+  <td>15:46:05 </td>
+  <td>19:31:42 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9829024496"/>&nbsp;3</td>
+  <td><b>57</b></td>
+  <td>ruchita das  S/O </td>
+  <td>16:41:42 <span style='color:red;'>(Late-0h 41m)<span></td>
+  <td>19:32:09 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9214669934"/>&nbsp;4</td>
+  <td><b>58</b></td>
+  <td>sarika soni S/O prakash soni</td>
+  <td>16:32:28 <span style='color:red;'>(Late-0h 32m)<span></td>
+  <td>19:32:20 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="9929192211"/>&nbsp;5</td>
+  <td><b>59</b></td>
+  <td>priyanshu tiwari S/O balmiki tiwari</td>
+  <td>15:48:37 </td>
+  <td>19:31:29 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8890923298"/>&nbsp;6</td>
+  <td><b>60</b></td>
+  <td>suryaprakash S/O radhyshyam</td>
+  <td>18:30:24 <span style='color:red;'>(Late-2h 30m)<span></td>
+  <td>19:31:15 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="94606166959"/>&nbsp;7</td>
+  <td><b>61</b></td>
+  <td>varun pal S/O narendra singh</td>
+  <td>16:34:11 <span style='color:red;'>(Late-0h 34m)<span></td>
+  <td>19:31:12 </td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+  <tr>
+  <td><input type="checkbox" name="mob[]" value="9887434371"/>&nbsp;1</td>
+  <td><b>52</b></td>
+  <td>chetan kumar  S/O madan lal </td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9875184190"/>&nbsp;2</td>
+  <td><b>53</b></td>
+  <td>shubham chandak S/O durgesh chandak</td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9862419305"/>&nbsp;3</td>
+  <td><b>55</b></td>
+  <td>mahesh Sharma  S/O c.m sharma </td>
+  </tr>  <tr>
+  <td><input type="checkbox" name="mob[]" value="9461203824"/>&nbsp;4</td>
+  <td><b>65</b></td>
+  <td>leetesh pathak S/O girraj prashad</td>
+  </tr>
+</table>
+
+</form>
+  </div>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/pageDisplay/style.css">
+<link rel="stylesheet" href="https://chasingwind.000webhostapp.com/display/fonts/fontStyle.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://chasingwind.000webhostapp.com/bootstrap/css/bootstrap.min.css" >
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://chasingwind.000webhostapp.com/bootstrap/js/bootstrap.min.js" ></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+    </div>
+  </html>
+<body >
+  <div class="container">
+      <h2 class="text-primary text-center font-weight-bold"><u>SIGMA EDUCATION</u><BR><span style="color:red;">BIOMETRIC ATTENDANCE</span></h2>
+    <form class="form row mt-4" method="post">
+      <div class="form-group col-12">
+        <label for="dt" class="">Date</label>
+        <input type="date" class="form-control" name="dt" id="date" value="2019-07-13">
+      </div>
+      <div class="col-12 form-group">
+        <div class="justify-content-center input-group-prepend">
+        <label class="input-group-text">Standard :</label>
+        <input type="text" name="std" list="std" value="XII PCB">
+      <datalist id="std">
+        <option value="IX CBSE">IX CBSE</option>
+        <option value="IX RBSE">IX RBSE</option>
+        <option value="X CBSE">X CBSE</option>
+        <option value="X RBSE">X RBSE</option>
+        <option value="XI PCM">XI PCM</option>
+        <option value="XI PCB">XI PCB</option>
+        <option value="XII PCM">XII PCM</option>
+        <option value="XII PCB">XII PCB</option>
+        <option value="STAFF">STAFF</option>
+      </datalist>
+      </div>
+      </div>
+
+    <div class="col-12 form-group text-center">
+      <input type="submit" class="btn btn-primary" name="repB" value="ATTENDANCE REPORT">
+    </div>
+    </form>
+    <hr>
+    <form class="form" method="POST" action="../automation/sendmsg.php">
+    <div class="bg-success text-center text-light">
+      <span>PRESENT STUDENTS</span>
+    </div>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">S.R.</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">In</th>
+        <th class="text-center">Out</th>
+      </tr>
+          <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8955762579"/>&nbsp;1</td>
+  <td><b>62</b></td>
+  <td>sandeep saini S/O ramlal saini</td>
+  <td>15:51:30 </td>
+  <td>19:31:37 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8209991748"/>&nbsp;2</td>
+  <td><b>63</b></td>
+  <td>yuvika sharma S/O kedar prashad</td>
+  <td>16:26:14 <span style='color:red;'>(Late-0h 26m)<span></td>
+  <td>19:32:39 </td>
+
+  </tr>  <tr class='text-center'>
+  <td><input type="checkbox" name="mob[]" value="8239141154"/>&nbsp;3</td>
+  <td><b>64</b></td>
+  <td>kalma S/O m.s khan</td>
+  <td>16:32:32 <span style='color:red;'>(Late-0h 32m)<span></td>
+  <td>19:32:12 </td>
+
+  </tr>    </table>
+<br>
+<div class="text-center bg-danger text-light">
+  Absent Students
+</div>
+  <table class="table table-bordered table-striped text-center">
+    <tr>
+<th>#</th>
+<th>sr</th>
+<th>Name</th>
+</tr>
+
+</table>
+
+</form>
+  </div>
