@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd /opt/lampp
+sudo ./lampp startapache
+sudo ./lampp startmysql
+sleep 5

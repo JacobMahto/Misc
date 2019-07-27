@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#AUTHOR : J. MAHTO , 15 JULY , 2019
+#DESCRIPTION : One time Script for setting up the required softwares for Computer lab in Linux Environment
+#	       Software Installed are : 1. FIGLET	2. ARDUINO	3. DOSBOX
+
+#updating the software directory
+sudo apt-get update
+
+#Downloading figlet software for "word banners"
+sudo apt-get install figlet
+
+#Download Arduino IDE
+sudo apt-get install arduino
+
+#Download Dosbox For Turbo-C++ installation
+sudo apt-get install dosbox
+mkdir /home/jvm/dos
+
+figlet "Welcome jvm"
